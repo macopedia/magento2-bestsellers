@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="macopedia" sortOrder="10">
+            <label>Macopedia</label>
+        </tab>
+        <section id="macopedia_bestseller" showInDefault="1" showInWebsite="0" showInStore="1" sortOrder="10">
+            <label>Bestseller</label>
+            <tab>macopedia</tab>
+            <resource>Macopedia_Bestseller::config</resource>
+            <group id="general" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
+                <label>General</label>
+                <field id="enabled" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" type="select">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="mappings" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="1">
+                <label>Mappings</label>
+                <field id="bestseller_attribute" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" type="select">
+                    <label>Bestseller Attribute</label>
+                    <source_model>Macopedia\Bestseller\Model\Config\Source\Attribute</source_model>
+                </field>
+                <field id="bestseller_category" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" type="select">
+                    <label>Bestseller Category</label>
+                    <source_model>Macopedia\Bestseller\Model\Config\Source\Category</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
