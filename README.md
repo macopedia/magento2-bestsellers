@@ -54,4 +54,4 @@ Enable module and install patches:
 
 ## License
 
-[Open Source License](LICENSE.txt)
+[Open Source License](LICENSE)
