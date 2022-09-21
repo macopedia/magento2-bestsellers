@@ -1,0 +1,27 @@
+{
+    "name": "macopedia/magento2-bestsellers",
+    "description": "Module for Magento2 for mapping bestseller attribute on bestseller category.",
+    "authors": [
+        {
+            "name": "Jakub Idziak",
+            "email": "extensions@macopedia.pl"
+        },
+        {
+            "name": "Marek Słoboda",
+            "email": "m.sloboda@macopedia.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "type": "magento2-module",
+    "licence": [
+        "GPL-3.0"
+    ],
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "Macopedia\\Bestseller\\": ""
+        }
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <exchange name="macopedia-bestseller-category-set-products" type="topic" connection="amqp">
+        <binding id="bestsellerBinding" topic="macopedia.bestseller.set.category.products" destinationType="queue" destination="bestseller-category-set-products-queue"/>
+    </exchange>
+</config>
